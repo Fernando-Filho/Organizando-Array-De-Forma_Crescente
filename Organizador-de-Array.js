@@ -1,13 +1,13 @@
-var tabela = [9,10,3,5,15]
-for (c = 0; c <tabela.length; c++){
-    var a = c
-    for(b = c+1;b <=tabela.length; b++){
-        if(a > b){
-            tabela[c] = b
-            tabela[c+1] = a
+var tabela = [15, 11, 10 ,7, 6, 2]
+for (contador1 = 0; contador1 < tabela.length; contador1++) {
+    var contador2 = contador1 + 1
+    for (contador2 ; contador2 < tabela.length; contador2++) {
+        var firstValue = tabela[contador1]
+        var secondValue = tabela[contador2]
+        if (firstValue > secondValue) {
+            tabela[contador1] = secondValue
+            tabela[contador2] = firstValue
         }
     }
-
-    console.log(tabela)
 }
-console.log(tabela[c+1] = a)
+console.log(tabela)
